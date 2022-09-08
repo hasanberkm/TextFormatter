@@ -8,6 +8,7 @@
     <strong>text</strong> maskelemek istediğiniz metindir.
 </p>
 
+<<<<<<< HEAD
 <ul>
     <li>Maskeleme yaparken maske türünü siz belirlersiniz bu nedenle kodların içerisinde bir değişiklik yapmanıza gerek kalmaz.</li>
     <li>
@@ -31,6 +32,33 @@
         </li>
     </ul>
 </ul>
+=======
+<p>
+    <ul>
+        <li>Maskeleme yaparken maske türünü siz belirlersiniz bu nedenle kodların içerisinde bir değişiklik yapmanıza gerek kalmaz.</li>
+        <li>
+            Maskeleme yaparken karakterleri belirli türlere göre (numerik, alfabetik ya da alfanumerik) sınırlayabilirsiniz. Bunu yapabilmek için 'format' parametresini kullanırken üç farklı karakter kullanabilirsiniz.
+        </li>
+
+        <ul>
+            <li>
+                <p><strong>0</strong>: Maskenizde kullandığınız 0 karakterinin bulunduğu yerlere girilecek değer yalnızca numerik olmak zorundadır.</p>
+                <p>Örnek: TextFormatter({format: '(000) 000 0000', text: '1234567890'}) => Çıktı: (123) 456 7890</p>
+            </li>
+
+            <li>
+                <p><strong>*</strong>: Maskenizde kullandığınız * karakterinin bulunduğu yerlere girilecek değer yalnızca alfabetik olmak zorundadır.</p>
+                Örnek: TextFormatter({format: '********', text: '123ABC45DE678F9GGRE0TR'}) => Çıktı: ABCDEFGG
+            </li>
+
+            <li>
+                <p><strong>?</strong>: Maskenizde kullandığınız ? karakterinin bulunduğu yerlere girilecek değer alfanumerik olabilir.</p>
+                <p>Örnek: TextFormatter({format: '????????', text: '123ABC45DE678F9GGRE0TR'}) => Çıktı: 123ABC45</p>
+            </li>
+        </ul>
+    </ul>
+</p>
+>>>>>>> bce8b010182d3743fcd53770cdb2c4f44c498527
 
 <hr>
 
@@ -68,4 +96,8 @@
             </li>
         </ul>
     </ul>
+<<<<<<< HEAD
 </p>
+=======
+</p>
+>>>>>>> bce8b010182d3743fcd53770cdb2c4f44c498527
