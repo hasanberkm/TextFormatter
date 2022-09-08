@@ -8,7 +8,6 @@
     <strong>text</strong> maskelemek istediğiniz metindir.
 </p>
 
-<<<<<<< HEAD
 <ul>
     <li>Maskeleme yaparken maske türünü siz belirlersiniz bu nedenle kodların içerisinde bir değişiklik yapmanıza gerek kalmaz.</li>
     <li>
@@ -32,7 +31,7 @@
         </li>
     </ul>
 </ul>
-=======
+
 <p>
     <ul>
         <li>Maskeleme yaparken maske türünü siz belirlersiniz bu nedenle kodların içerisinde bir değişiklik yapmanıza gerek kalmaz.</li>
@@ -58,7 +57,6 @@
         </ul>
     </ul>
 </p>
->>>>>>> bce8b010182d3743fcd53770cdb2c4f44c498527
 
 <hr>
 
@@ -72,32 +70,26 @@
     <strong>text</strong> is the text you want to mask.
 </p>
 
-<p>
+<ul>
+    <li>When masking, you determine the type of mask, so you do not need to make any changes in the codes.</li>
+    <li>
+        When masking, you can limit characters to certain types (numeric, alphabetic, or alphanumeric). To do this, you can use three different characters when using the 'format' parameter.
+    </li>
+
     <ul>
-        <li>When masking, you determine the type of mask, so you do not need to make any changes in the codes.</li>
         <li>
-            When masking, you can limit characters to certain types (numeric, alphabetic, or alphanumeric). To do this, you can use three different characters when using the 'format' parameter.
+            <p><strong>0</strong>: The value to be entered where the 0 character you use in your mask is only numeric.</p>
+            <p>Example: TextFormatter({format: '(000) 000 0000', text: '1234567890'}) => Output: (123) 456 7890</p>
         </li>
 
-        <ul>
-            <li>
-                <p><strong>0</strong>: The value to be entered where the 0 character you use in your mask is only numeric.</p>
-                <p>Example: TextFormatter({format: '(000) 000 0000', text: '1234567890'}) => Output: (123) 456 7890</p>
-            </li>
+        <li>
+            <p><strong>*</strong>: The value to be entered in the places where the * character you use in your mask must be alphabetical only.</p>
+            Example: TextFormatter({format: '********', text: '123ABC45DE678F9GGRE0TR'}) => Output: ABCDEFGG
+        </li>
 
-            <li>
-                <p><strong>*</strong>: The value to be entered in the places where the * character you use in your mask must be alphabetical only.</p>
-                Example: TextFormatter({format: '********', text: '123ABC45DE678F9GGRE0TR'}) => Output: ABCDEFGG
-            </li>
-
-            <li>
-                <p><strong>?</strong>: The ? The value to be entered in the places where the character is found can be alphanumeric.</p>
-                <p>Example: TextFormatter({format: '??????????', text: '123ABC45DE678F9GGRE0TR'}) => Output: 123ABC45</p>
-            </li>
-        </ul>
+        <li>
+            <p><strong>?</strong>: The ? The value to be entered in the places where the character is found can be alphanumeric.</p>
+            <p>Example: TextFormatter({format: '??????????', text: '123ABC45DE678F9GGRE0TR'}) => Output: 123ABC45</p>
+        </li>
     </ul>
-<<<<<<< HEAD
-</p>
-=======
-</p>
->>>>>>> bce8b010182d3743fcd53770cdb2c4f44c498527
+</ul>
