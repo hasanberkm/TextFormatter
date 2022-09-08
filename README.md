@@ -1,6 +1,6 @@
 <p>[TR]</p>
 
-<p>TextFormatter bir input maskeleme kütüphanesidir. Bu kütüphaneyi kullanarak inputlarınızı istediğiniz şekildemaskeleyebilirsiniz.</p>
+<p>TextFormatter bir input maskeleme kütüphanesidir. Bu kütüphaneyi kullanarak inputlarınızı istediğiniz şekilde maskeleyebilirsiniz.</p>
 
 <p>
     TextFormatter'i kullanırken iki parametreye ihtiyaç duyarsınız. Bunlar <strong>format</strong> ve <strong>text</strong> parametreleridir.
