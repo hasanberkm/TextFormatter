@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Javascript Mask</title>
+    </head>
+    
+    <body>
+        <input type="text" id="input">
+    </body>
+    
+    <!--Load mask.js-->
+    <script src="TextFormatter.js"></script> 
+    <script>
+        /* TextFormatter will need two parameters. These are 'format' and 'text'.
+            ** 'Format' is your input mask.
+            ** 'Text' is the input value you want to mask
+        */
+
+
+          /////////////////////////////////////
+         //   If you are using JavaScript   //
+        /////////////////////////////////////
+
+        var input = document.getElementById("input");
+
+        input.addEventListener('input', function(e){    
+            input.value = TextFormatter({format: "(000) 000 0000", text: input.value})
+        });
+
+
+          /////////////////////////////////////
+         //     If you are using JQuery     //
+        /////////////////////////////////////
+
+        $("#input").change(function(){
+            TextFormatter({format: "00/00/0000", text: $(this).val()})
+        })
+    </script>
+</HTML>
