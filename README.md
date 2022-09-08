@@ -13,50 +13,21 @@
     <li>
         Maskeleme yaparken karakterleri belirli türlere göre (numerik, alfabetik ya da alfanumerik) sınırlayabilirsiniz. Bunu yapabilmek için 'format' parametresini kullanırken üç farklı karakter kullanabilirsiniz.
     </li>
-</ul>
-
-<ul>
+    <ul>
         <li>
             <p><strong>0</strong>: Maskenizde kullandığınız 0 karakterinin bulunduğu yerlere girilecek değer yalnızca numerik olmak zorundadır.</p>
             <p>Örnek: TextFormatter({format: '(000) 000 0000', text: '1234567890'}) => Çıktı: (123) 456 7890</p>
         </li>
-
         <li>
             <p><strong>*</strong>: Maskenizde kullandığınız * karakterinin bulunduğu yerlere girilecek değer yalnızca alfabetik olmak zorundadır.</p>
             Örnek: TextFormatter({format: '********', text: '123ABC45DE678F9GGRE0TR'}) => Çıktı: ABCDEFGG
         </li>
-
         <li>
             <p><strong>?</strong>: Maskenizde kullandığınız ? karakterinin bulunduğu yerlere girilecek değer alfanumerik olabilir.</p>
             <p>Örnek: TextFormatter({format: '????????', text: '123ABC45DE678F9GGRE0TR'}) => Çıktı: 123ABC45</p>
         </li>
     </ul>
-
-<p>
-    <ul>
-        <li>Maskeleme yaparken maske türünü siz belirlersiniz bu nedenle kodların içerisinde bir değişiklik yapmanıza gerek kalmaz.</li>
-        <li>
-            Maskeleme yaparken karakterleri belirli türlere göre (numerik, alfabetik ya da alfanumerik) sınırlayabilirsiniz. Bunu yapabilmek için 'format' parametresini kullanırken üç farklı karakter kullanabilirsiniz.
-        </li>
-
-        <ul>
-            <li>
-                <p><strong>0</strong>: Maskenizde kullandığınız 0 karakterinin bulunduğu yerlere girilecek değer yalnızca numerik olmak zorundadır.</p>
-                <p>Örnek: TextFormatter({format: '(000) 000 0000', text: '1234567890'}) => Çıktı: (123) 456 7890</p>
-            </li>
-
-            <li>
-                <p><strong>*</strong>: Maskenizde kullandığınız * karakterinin bulunduğu yerlere girilecek değer yalnızca alfabetik olmak zorundadır.</p>
-                Örnek: TextFormatter({format: '********', text: '123ABC45DE678F9GGRE0TR'}) => Çıktı: ABCDEFGG
-            </li>
-
-            <li>
-                <p><strong>?</strong>: Maskenizde kullandığınız ? karakterinin bulunduğu yerlere girilecek değer alfanumerik olabilir.</p>
-                <p>Örnek: TextFormatter({format: '????????', text: '123ABC45DE678F9GGRE0TR'}) => Çıktı: 123ABC45</p>
-            </li>
-        </ul>
-    </ul>
-</p>
+</ul>
 
 <hr>
 
@@ -75,18 +46,15 @@
     <li>
         When masking, you can limit characters to certain types (numeric, alphabetic, or alphanumeric). To do this, you can use three different characters when using the 'format' parameter.
     </li>
-
     <ul>
         <li>
             <p><strong>0</strong>: The value to be entered where the 0 character you use in your mask is only numeric.</p>
             <p>Example: TextFormatter({format: '(000) 000 0000', text: '1234567890'}) => Output: (123) 456 7890</p>
         </li>
-
         <li>
             <p><strong>*</strong>: The value to be entered in the places where the * character you use in your mask must be alphabetical only.</p>
             Example: TextFormatter({format: '********', text: '123ABC45DE678F9GGRE0TR'}) => Output: ABCDEFGG
         </li>
-
         <li>
             <p><strong>?</strong>: The ? The value to be entered in the places where the character is found can be alphanumeric.</p>
             <p>Example: TextFormatter({format: '??????????', text: '123ABC45DE678F9GGRE0TR'}) => Output: 123ABC45</p>
