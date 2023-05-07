@@ -1,3 +1,4 @@
+const exports = {};
 "use strict";
 exports.__esModule = true;
 exports.TextFormatter = void 0;
