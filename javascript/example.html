@@ -33,7 +33,14 @@
         /////////////////////////////////////
 
         $("#input").change(function(){
-            TextFormatter({format: "00/00/0000", text: $(this).val()})
+            $this = $(this);
+            
+            $this.val(
+                TextFormatter({
+                    format: "00/00/0000", 
+                    text: $this.val()
+                })
+            )
         })
     </script>
 </HTML>
